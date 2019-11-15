@@ -8,5 +8,5 @@ Run 'generate_true_rec.m' to generate true recordings 'true_rec.mat' based on a 
 # Run FWI with true recordings
 Run 'FWI,mat' to process FWI based on the true recordings to reconstruct the velocity model. The starting model is given below.
 ![starting velocity](https://user-images.githubusercontent.com/45905048/68906711-855fb000-0745-11ea-812b-d576b0eb66ec.jpg)
-And the progress of FWI is shown below. Below is the result after 60 times of interations.
+Below is the result after 60 times of interations.
 ![progress](https://user-images.githubusercontent.com/45905048/68906398-66145300-0744-11ea-85ae-a0602992f461.jpg)
