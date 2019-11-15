@@ -1,5 +1,5 @@
 # FWI
-acoustic Full-waveform inversion (FWI) for isotropic media in time domain.\
+Acoustic Full-waveform inversion (FWI) for isotropic media in time domain.\
 Acoustic wave equation is solved with fixed boundary condition. Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
 
 # Generate true recordings
