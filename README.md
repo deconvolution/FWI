@@ -1,7 +1,7 @@
 # FWI
 acoustic FWI for isotropic media in time domain\
 
-# Generate true recordings\
+# Generate true recordings
 Run 'generate_true_rec.m' to generate true recordings 'true_rec.mat' based on a toy model 'trueModel'. Below is our true velocity model (stolen from the courst TPG4155 at NTNU).
 ![true velocity](https://user-images.githubusercontent.com/45905048/68906553-f81c5b80-0744-11ea-90ab-1384d10d7f28.jpg)
 # Run FWI with true recordings
