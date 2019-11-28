@@ -1,5 +1,8 @@
 # FWI
-Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equation is solved in the frequency domain with perfectly mathced layers (PML) and absorbing boundary condition (ABC).\
+Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equation is solved in the frequency domain with perfectly mathced layers (PML) and absorbing boundary condition (ABC) by finite difference method. It takes about one hour for each iteration as the wave equation is solved in the frequency domain, which is much slower than the time domain solution. The progress of each step will be generated in the command window, as below\
+
+![WeChat Screenshot_20191128214948](https://user-images.githubusercontent.com/45905048/69831281-08463780-1229-11ea-89de-6fdb4e72bc65.png)
+
 Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
 
 # Generate true recordings
@@ -10,7 +13,7 @@ Run 'FWI.mat' to process FWI based on the true recordings to reconstruct the vel
 ![starting velocity](https://user-images.githubusercontent.com/45905048/68906711-855fb000-0745-11ea-812b-d576b0eb66ec.jpg)
 Below is the final result after 30 times of interations. The final velocity model is close to our true velocity model. The salt structure on the left of the true model is not well reconstructed. The reason is that the high velocity of the salt bends the P-wave considerably, making it hard for P-wave penetrate the inner side. 
 ![progress_image30](https://user-images.githubusercontent.com/45905048/69831085-20698700-1228-11ea-8549-7efad1ab0dc1.png)
-# Appendices: FWI progress
+# Appendix: FWI progress
 ## Iteration 1
 ![progress_image1](https://user-images.githubusercontent.com/45905048/69831122-4bec7180-1228-11ea-96ea-f8493f29ddf2.png)
 ## Iteration 5
