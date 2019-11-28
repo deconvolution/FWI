@@ -6,7 +6,7 @@ Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equat
 Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
 
 # Generate true recordings
-Run 'generate_true_rec.m' to generate true recordings 'true_rect.mat' based on a toy model 'trueModel'. Below is our true velocity model (stolen from the courst TPG4155 at NTNU).
+Run 'generate_true_rec.m' to generate true recordings 'true_rect.mat' based on a toy model 'trueModel'. Below is our true velocity model (stolen from the course TPG4155 at NTNU).
 ![true velocity](https://user-images.githubusercontent.com/45905048/68906553-f81c5b80-0744-11ea-90ab-1384d10d7f28.jpg)
 # Run FWI with true recordings
 Run 'FWI.mat' to process FWI based on the true recordings to reconstruct the velocity model. The starting model is given below.
