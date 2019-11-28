@@ -10,3 +10,18 @@ Run 'FWI.mat' to process FWI based on the true recordings to reconstruct the vel
 ![starting velocity](https://user-images.githubusercontent.com/45905048/68906711-855fb000-0745-11ea-812b-d576b0eb66ec.jpg)
 Below is the final result after 30 times of interations. The final velocity model is close to our true velocity model. The salt structure on the left of the true model is not well reconstructed. The reason is that the high velocity of the salt bends the P-wave considerably, making it hard for P-wave penetrate the inner side. 
 ![progress_image30](https://user-images.githubusercontent.com/45905048/69831085-20698700-1228-11ea-8549-7efad1ab0dc1.png)
+# Appendices: FWI progress
+## Iteration 1
+![progress_image1](https://user-images.githubusercontent.com/45905048/69831122-4bec7180-1228-11ea-96ea-f8493f29ddf2.png)
+## Iteration 5
+![progress_image5](https://user-images.githubusercontent.com/45905048/69831143-5c9ce780-1228-11ea-94d0-dcf456292c58.png)
+## Iteration 10
+![progress_image10](https://user-images.githubusercontent.com/45905048/69831155-69b9d680-1228-11ea-845b-2fe8027502cf.png)
+## Iteration 15
+![progress_image15](https://user-images.githubusercontent.com/45905048/69831162-73dbd500-1228-11ea-9aa2-8a4d9fa53bc2.png)
+## Iteration 20
+![progress_image20](https://user-images.githubusercontent.com/45905048/69831171-7d653d00-1228-11ea-82b8-7a560596ae7e.png)
+## Iteration 25
+![progress_image25](https://user-images.githubusercontent.com/45905048/69831180-89e99580-1228-11ea-908c-0aded1c15606.png)
+## Iteration 30
+![progress_image30](https://user-images.githubusercontent.com/45905048/69831186-9241d080-1228-11ea-90fe-0e9112de720c.png)
