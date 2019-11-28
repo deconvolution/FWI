@@ -1,6 +1,6 @@
 # FWI
-Acoustic Full-waveform inversion (FWI) for isotropic media in time domain.\
-Acoustic wave equation is solved with fixed boundary condition. Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
+Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equation is solved in the frequency domain with perfectly mathced layers (PML) and absorbing boundary condition (ABC).\
+Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
 
 # Generate true recordings
 Run 'generate_true_rec.m' to generate true recordings 'true_rec.mat' based on a toy model 'trueModel'. Below is our true velocity model (stolen from the courst TPG4155 at NTNU).
