@@ -1,8 +1,8 @@
 # FWI
-Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equation is solved in the frequency domain with perfectly mathced layers (PML) and absorbing boundary condition (ABC) by finite difference method. It takes about one hour for each iteration as the wave equation is solved in the frequency domain, which is much slower than the time domain solution. The progress of each step will be generated in the command window, as below\
+Acoustic Full-waveform inversion (FWI) for isotropic media, where the wave equation is solved in the frequency domain with perfectly mathced layers (PML) and absorbing boundary condition (ABC) by finite difference method. It takes about one hour for each iteration as the wave equation is solved in the frequency domain, which is much slower than the time domain solution. The progress of each step will be generated in the command window, as below
 
 ![WeChat Screenshot_20191128214948](https://user-images.githubusercontent.com/45905048/69831281-08463780-1229-11ea-89de-6fdb4e72bc65.png)
-
+\
 Forward and adjoint wavefields are cross-correlated to calculate the gradient for velocity correction.
 
 # Generate true recordings
