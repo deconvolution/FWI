@@ -4,7 +4,8 @@ close all;
 dims.dh=10;
 lp=30;
 load('trueModel.mat');
-v0=trueModel;
+v0=ones(size(trueModel))*2500;
+v0(25:35,30:40)=1700;
 dims.dt=10^-3; % [s]
 dims.nz0=size(v0,1); % Cells in z-direction
 dims.nx0=size(v0,2); % Cells in x-direction
@@ -105,8 +106,8 @@ pini=zeros(nz,nx,length(ome));
 
 % v
 %% source location
-sx0=dims.mx(1):1:dims.mx(end);
-sz0=dims.mz(1)*ones(size(sx0));
+sx0=dims.mx(1);
+sz0=dims.mz(1);
 
 % true_rec: (time_samples,receivers,source), common shot gather
 true_rect=zeros(dims.nt,length(rx),length(sx0));

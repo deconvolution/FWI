@@ -5,11 +5,11 @@ load('true_rect.mat');
 dims.dh=10;
 lp=30;
 % initial velocity model
-v0=ones([51,101])*2000;
+v0=ones([51,101])*2500;
 % estimation to first layer thickness
 l1=15;
 % estimation to first layer velocity
-v0(l1:end,:)=2300;
+%v0(l1:end,:)=2300;
 dims.dt=10^-3; % [s]
 dims.nz0=size(v0,1); % Cells in z-direction
 dims.nx0=size(v0,2); % Cells in x-direction
@@ -50,8 +50,8 @@ dims.mz=lp+1:dims.nz0+lp;
 dims.mx=lp+1:dims.nx0+lp;
 %% source
 singles=rickerWave(10,dims);
-dims.sx=min(dims.mx):max(dims.mx);
-dims.sz=min(dims.mz)*ones(1,length(dims.mx));
+dims.sx=min(dims.mx);
+dims.sz=min(dims.mz);
 %% Receiver locations
 dims.rx=min(dims.mx):max(dims.mx);
 dims.rz=min(dims.mz)*ones(1,length(dims.rx));
@@ -138,7 +138,7 @@ for l=1:n_iteration
         vg=vgt+vg;
     end
     vg=vg/length(sx0);
-    vg=taperGradient(vg,lp,l1);
+    %vg=taperGradient(vg,lp,l1);
     C(l)=Ct/length(sx0);
     fprintf('\n \t\t\t Cost=%f',C(l));
     fprintf(FID,'\n \t Cost=%f',C(l));
